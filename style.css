@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+     margin-top: 25px; 
+     height: 74px; 
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font1);
+}
+.left{
+font-size: 20px;
+display: flex;
+}
+.right{
+
+}
+.left ul {
+   display: flex;
+   align-items: center;
+}
+.left ul li{
+    list-style: none;
+    margin: 0px 45px;
+    font-family: var(--font1);
+    font: 10px;
+}
+.left ul li a:hover{
+font-weight: bolder;
+color: var(--main-bg-color);
+transition: all 0.3s ease-in-out;
+
+}
+.left ul li a{
+   text-decoration: none;
+   color: black;
+}
+.content-left{
+font-family:var(--font1);
+display:flex;
+justify-content: center;
+flex-direction: column;
+ padding:49px; 
+ z-index:1; 
+}
+.content-right{
+display:flex;
+align-items: center;
+justify-content: center;
+}
+.content-right img {
+     border: 2px solid black; 
+     border-radius: 300px; 
+}
+.content{
+    display:flex;
+     height:100%
+          /*background-color: rgb(221, 215, 221);*/
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+}
+.content::after{
+    content:"";
+    background-image: url('../css/home.svg.jpg');
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+}
+.home-articles{
+padding: 18px;
+background-color: rgb(255, 240, 223);
+margin-top: 23px;
+position: relative;
+}
+.year-box {
+    position: absolute;  
+    right: 0px;
+    top: 100px;
+    width: 234px;
+    height: 255px;
+    font-size: 18px;
+  }
+  
+  .year-box div {
+    margin: 12px 0px;
+  }
+.home-article{
+display:flex;
+margin:25px;
+}
+.home-article img{
+    width:300px;
+    }
+.home-article-content{
+    align-self: center;
+    margin: 25px;
+}
+.home-article-content a {
+    text-decoration: none;
+    color: black;
+  }
+.footer {
+    height: 54px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       background-color:black;
+       color: white;
+       flex-direction: column;
+
+}
+
+.footer a{
+    color:white;
+}
